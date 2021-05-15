@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -28,6 +30,31 @@
 
 </head>
 <style>
+    .brand-carousel {
+        background: aliceblue;
+        margin-top: 15%;
+    }
+
+    .owl-dots {
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    .owl-dot {
+        display: inline-block;
+        height: 15px !important;
+        width: 15px !important;
+        background-color: #878787 !important;
+        opacity: 0.8;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+
+    .owl-dot.active {
+        background-color: #000 !important;
+    }
+    }
+
     #noobbtn {
         padding-top: 150px;
     }
@@ -50,6 +77,7 @@
         -webkit-transition: ease all 0.35s;
         transition: ease all 0.35s;
         top: 0;
+        height: 420px;
     }
 
     .feature-box-1 * {
@@ -127,7 +155,7 @@
     }
 
     .section-title {
-        padding-bottom: 45px;
+        /* padding-bottom: 45px; */
     }
 
     .section-title h2 {
@@ -328,7 +356,7 @@
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 126%;
         margin-left: 54px;
 
@@ -382,6 +410,15 @@
     .axil-featured .inner {
         padding-left: 0;
     }
+    .lanimg{
+        height: 80vh;
+    }
+    @media only screen and (max-width: 768px) {
+        .lanimg{
+        height: 30vh;
+    }
+    }
+    
 </style>
 
 <body onload="myFunction()">
@@ -410,14 +447,15 @@
                                 <!-- Start Mainmanu Nav -->
                                 <nav class="mainmenu-nav d-none d-lg-block">
                                     <ul class="mainmenu">
-                                        <li><a id="activenav" href="index.html" id="a-tag-nav-menu"> <b> Home</b></a></li>
+                                        <li><a id="activenav" href="index.html" id="a-tag-nav-menu"> <b> Home</b></a>
+                                        </li>
                                         <li><a href="about.html" id="a-tag-nav-menu"><b> Agency</b> </a></li>
                                         <li><a href="career.html" id="a-tag-nav-menu"> <b> Careers</b> </a></li>
                                         <li><a href="service.html" id="a-tag-nav-menu"><b> Services</b> </a></li>
 
                                         <li><a href="blog-list-two.html" id="a-tag-nav-menu"><b> Insights</b> </a></li>
 
-                                        <li><a href="contact.html" id="a-tag-contact"><b> Contact Us</b> </a></li>
+                                        <a href="contact.html" id="a-tag-contact"><b> Contact Us</b> </a>
 
                                     </ul>
                                 </nav>
@@ -433,8 +471,7 @@
 
 
                                 <!-- Start Menu Bar  -->
-                                <div
-                                    class="ax-menubar popup-navigation-activation d-block d-lg-none ml_sm--20 ml_md--20">
+                                <div class="ax-menubar popup-navigation-activation d-block d-lg-none ml_sm--20 ml_md--20">
                                     <div>
                                         <i></i>
                                     </div>
@@ -456,7 +493,7 @@
                 <div class="mobileheader">
                     <div class="logom">
                         <a href="index.html">
-                            <img id="logom" src="logo/Cret_Mark_Transparent (1).png" alt="Logo images">
+                            <img id="logom" src="/logo/Cret_Mark_Transparent (1).png" alt="Logo images">
                         </a>
                     </div>
                     <a class="close-menu" href="#"></a>
@@ -497,7 +534,7 @@
                         <div class="col-lg-6 col-xl-6 col-md-12 col-12 header-image">
                             <div class="thumb-inner" id="image-home">
                                 <div class="thumbnail">
-                                    <img class="image w-100 " src="/img_cretmark/Frame 4.svg" alt="Featured Images">
+                                    <img class="image w-100  lanimg"  src="/img_cretmark/Frame 4.svg" alt="Featured Images">
                                 </div>
 
                             </div>
@@ -506,35 +543,30 @@
                             <div class="inner">
                                 <div class="section-title ">
 
-                                    <h1 id="title-home-heading">Creatmark Business Solution </a></h1>
-                                    <p class="" id="p-tag-home">Donec metus lorem, vulputate at sapien sit amet, auctor
-                                        iaculis
-                                        lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique
-                                        libero
+                                    <h1 id="title-home-heading">CretMark <span class="color2" >Business</span> <br> Solutions </a></h1>
+                                    <p class="" style="font-family: sans-serif;" id="p-tag-home">A one-stop-solution for all your Business Challenges.
+                                       
                                     </p>
                                     <div class="contact-form-wrapper" id="form-id">
                                         <!-- Start Contact Form -->
                                         <div class="axil-contact-form">
 
-                                            <form id="contact-form" method="POST"
-                                                action="http://axilthemes.com/demo/template/keystroke/mail.php">
+                                            <form id="contact-form" action="" method="POST" >
 
                                                 <div class="form-group">
-                                                    <input name="con_email" type="email" class="input-type"
-                                                        id="input-ty">
-                                                    <label id="label-id">Email</label>
+                                                    <input name="con_email" id="con_email"  type="email" class="input-type " id="input-ty" >
+                                                    <label id="label-id"  >Email</label>
                                                     <span class="focus-border"></span>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input name="con_email" type="email" class="input-type"
-                                                        id="input-ty">
-                                                    <label id="label-id">Service you want</label>
+                                                    <input name="con_text" id="con_text" type="text" class="input-type "  id="input-ty">
+                                                    <label id="label-id"> Query</label>
                                                     <span class="focus-border"></span>
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <input type="submit" value="Get a quote" id="button-id">
-                                                    <p class="form-messege"></p>
+                                                    <input  name="con_submit" type="submit" value="Get a quote" id="button-id">
+                                                
                                                 </div>
                                             </form>
                                         </div>
@@ -551,71 +583,169 @@
                 </div>
             </div>
             <!-- End Featured Area -->
-
             <!-- Start Client Logo Area  -->
             <div class="axil-client-area bg-shape-image-position bg-color-white axil-bg-oval " id="noobscroll">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-xl-6">
-                            <div class="section-title text-left mb--120 mb_md--5 mb_sm--5">
-
-                                <h2 class="title wow" data-splitting><span>Clients</span>
-                                </h2>
+                        <div class="col-lg-12">
+                            <div class="section-title mb--60 ">
+                                <h2>Clients</h2>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-6 col-sm-6 col-xs-6">
                             <div class="client-logo">
-                                <ul class="client-list axil-carousel liststyle d-flex justify-content-center text-center justify-content-md-between"
-                                    data-slick-options='{
-                                    "spaceBetween": 0, 
-                                    "slidesToShow": 6, 
-                                    "slidesToScroll": 1, 
+                                <ul class="client-list axil-carousel liststyle d-flex justify-content-center text-center justify-content-md-between" data-slick='{
+                                        "loop": true,
+                                        "autoplay": true,
+                                        
+                                        "spaceBetween": 0, 
+                                        "slidesToShow": 2, 
+                                        "slidesToScroll": 4, 
+                                        "autoplaySpeed": 2000,
 
-                                    "arrows": false, 
+                                        "arrows": true, 
+                                        "infinite": true,
+                                        "centerMode":true,
+                                        "dots": false
+                                }' data-slick-responsive='[
+                                    {"breakpoint":769, "settings": {"slidesToShow": 2}},
+                                    {"breakpoint":756, "settings": {"slidesToShow": 2}},
+                                    {"breakpoint":660, "settings": {"slidesToShow": 2}},
+                                    {"breakpoint":600, "settings": {"slidesToShow": 2}},
+                                    {"breakpoint":481, "settings": {"slidesToShow": 2}}
+                                ]'>
+                                    <li><a href="#">
+                                            <img src="/clients/Screenshot (470).png" alt="Client Images">
+                                        </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <img src="/clients/Screenshot (471).png" alt="Client Images">
+
+                                        </a></li>
+                                    <li><a href="#">
+                                            <img src="/clients/Screenshot (472).png" alt="Client Images">
+                                        </a></li>
+                                    <li><a href="#">
+                                            <img src="/clients/Screenshot (473).png" alt="Client Images">
+                                        </a></li>
+                                    <li><a href="#">
+                                            <img src="/clients/Screenshot (474).png" alt="Client Images">
+                                        </a></li>
+                                    <li><a href="#">
+                                            <img src="/clients/Screenshot (475).png" alt="Client Images">
+                                        </a></li>
+                                    <!-- <li><a href="#">
+                                            <img src="/clients/Screenshot (470).png" alt="Client Images">
+                                        </a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-xs-6">
+                            <div class="client-logo">
+                                <ul class="client-list axil-carousel liststyle d-flex justify-content-center text-center justify-content-md-between" data-slick-options='{
+                                        "loop": true,
+                                        "autoplay": true,
+                                        
+                                    "spaceBetween": 0, 
+                                    "slidesToShow": 1, 
+                                    "slidesToScroll": 1, 
+                                    "autoplaySpeed": 2000,
+
+                                    "arrows": true, 
                                     "infinite": true,
                                     "centerMode":true,
                                     "dots": false
                                 }' data-slick-responsive='[
-                                    {"breakpoint":769, "settings": {"slidesToShow": 4}},
-                                    {"breakpoint":756, "settings": {"slidesToShow": 4}},
-                                    {"breakpoint":660, "settings": {"slidesToShow": 4}},
-                                    {"breakpoint":600, "settings": {"slidesToShow": 3}},
-                                    {"breakpoint":481, "settings": {"slidesToShow": 2}}
+                                    {"breakpoint":769, "settings": {"slidesToShow": 1}},
+                                    {"breakpoint":756, "settings": {"slidesToShow": 1}},
+                                    {"breakpoint":660, "settings": {"slidesToShow": 1}},
+                                    {"breakpoint":600, "settings": {"slidesToShow": 1}},
+                                    {"breakpoint":481, "settings": {"slidesToShow": 1}}
                                 ]'>
-                                    <li><a href="#">
-                                            <img src="assets/images/brand/brand-07.png" alt="Client Images">
-                                        </a></li>
-                                    <li><a href="#">
-                                            <img src="assets/images/brand/brand-08.png" alt="Client Images">
-                                        </a></li>
-                                    <li><a href="#">
-                                            <img src="assets/images/brand/brand-09.png" alt="Client Images">
-                                        </a></li>
-                                    <li><a href="#">
-                                            <img src="assets/images/brand/brand-10.png" alt="Client Images">
-                                        </a></li>
-                                    <li><a href="#">
-                                            <img src="assets/images/brand/brand-11.png" alt="Client Images">
-                                        </a></li>
-                                    <li><a href="#">
-                                            <img src="assets/images/brand/brand-12.png" alt="Client Images">
-                                        </a></li>
-                                    <li><a href="#">
-                                            <img src="assets/images/brand/brand-08.png" alt="Client Images">
-                                        </a></li>
+                                    <li>
+                                        <div class="section-title text-left">
+                                            <!-- <span class="sub-title extra04-color wow">featured case study</span> -->
+                                            <h2 class="title wow"><a href="#">Sandeep Violinist</a></h2>
+                                            <ul>
+                                                <li> Web Development</li>
+                                            </ul>
+                                            <!-- <p class="subtitle-2 wow"> Web Development</p> -->
+                                        
+
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section-title text-left">
+                                            <!-- <span class="sub-title extra04-color wow">featured case study</span> -->
+                                            <h2 class="title wow"><a href="#">Trustly</a></h2>
+                                            <ul>
+                                                <li> Web Development</li>
+                                            </ul>
+
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section-title text-left">
+                                            <!-- <span class="sub-title extra04-color wow">featured case study</span> -->
+                                            <h2 class="title wow"><a href="#">starmapping</a></h2>
+                                            <ul>
+                                                <li> Web Development</li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section-title text-left">
+                                            <!-- <span class="sub-title extra04-color wow">featured case study</span> -->
+                                            <h2 class="title wow"><a href="#">greenleaf</a></h2>
+                                            <!-- <p class="subtitle-2 wow">   </p> -->
+                                            <ul>
+                                                <li> Search Engine Optimization </li>
+                                                <li> Social Media Marketing</li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section-title text-left">
+                                            <!-- <span class="sub-title extra04-color wow">featured case study</span> -->
+                                            <h2 class="title wow"><a href="#">mercomindia</a></h2>
+                                            <ul>
+                                                <li> Search Engine Optimization </li>
+                                                <!-- <li> Social Media Marketing</li> -->
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="section-title text-left">
+                                            <!-- <span class="sub-title extra04-color wow">featured case study</span> -->
+                                            <h2 class="title wow"><a href="#">Mirei Op Reis</a></h2>
+                                            <ul>
+                                                <li> Web Development</li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+
+                                    <!-- <li><a href="#">
+                                            <img src="/clients/Screenshot (470).png" alt="Client Images">
+                                        </a></li> -->
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-shape-image">
-                    <img src="assets/images/others/background-shape.svg" alt="Bg images">
-                </div>
+
             </div>
 
             <!-- End Client Logo Area  -->
+
+
+
 
             <!-- Start Service Area -->
             <div class="axil-service-area ax-section-gap bg-color-white">
@@ -624,7 +754,7 @@
                         <div class="col-lg-8 col-xl-6">
                             <div class="section-title text-left mb--120 mb_md--5 mb_sm--5">
 
-                                <h2 class="title wow" data-splitting><span>Services</span>
+                                <h2 class="title wow" style="text-transform: none;" data-splitting><span>Services</span>
                                 </h2>
                             </div>
                         </div>
@@ -638,17 +768,18 @@
                                     <div class="icon gradient-color-04">
                                         <div class="icon-inner">
                                             <img src="assets/images/icons/layer.svg" alt="Icon Images">
-                                            <div class="image-2"><img
-                                                    src="https://img.icons8.com/cotton/64/000000/web-design--v2.png" />
+                                            <div class="image-2"><img src="https://img.icons8.com/cotton/64/000000/web-design--v2.png" />
                                             </div>
 
                                         </div>
                                     </div>
                                     <div class="content">
                                         <h4 class="title wow"><a href="#"> UI/UX DESING</a></h4>
-                                        <p class="wow">We design professional looking yet simple websites.
-                                            Our designs are search engine
-                                            and user friendly. </p>
+                                        <p class="wow">
+                                            UI and UX are crucial elements for your business and Cretmark offers
+                                            comprehensive, introspective, and pragmatic UI/UX services for your
+                                            business.
+                                        </p>
                                         <a class="axil-button" data-hover="Learn More" href="#">Learn
                                             More</a>
                                     </div>
@@ -659,21 +790,20 @@
 
                         <!-- Start Single Service -->
                         <div class="col-lg-4 col-md-4 col-sm-4 col-12 move-up wow" id="single-ser-section">
-                            <div
-                                class="axil-service text-center axil-control paralax-image service-bg-gray space-to-top">
+                            <div class="axil-service text-center axil-control paralax-image service-bg-gray space-to-top">
                                 <div class="inner">
                                     <div class="icon gradient-color-02">
                                         <div class="icon-inner">
                                             <img src="assets/images/icons/layer.svg" alt="Icon Images">
-                                            <div class="image-2"><img src="assets/images/icons/add.svg"
-                                                    alt="Shape Images"></div>
+                                            <div class="image-2"><img src="assets/images/icons/add.svg" alt="Shape Images"></div>
                                         </div>
                                     </div>
                                     <div class="content">
                                         <h4 class="title wow"><a href="#">App Development</a>
                                         </h4>
-                                        <p class="wow">We design professional looking yet simple websites.
-                                            Our designs are search engine and user friendly. </p>
+                                        <p class="wow">We are here to create a fantastic mobile app for you that
+                                            reflects the value of your brand and that is easy to operate for your
+                                            customers. </p>
                                         <a class="axil-button" data-hover="Learn More" href="#">Learn
                                             More</a>
                                     </div>
@@ -684,14 +814,12 @@
 
                         <!-- Start Single Service -->
                         <div class="col-lg-4 col-md-4 col-sm-4 col-12 move-up wow" id="single-ser-section">
-                            <div
-                                class="axil-service text-center axil-control active paralax-image service-bg-gray space-to-top2">
+                            <div class="axil-service text-center axil-control active paralax-image service-bg-gray space-to-top2">
                                 <div class="inner">
                                     <div class="icon gradient-color-03">
                                         <div class="icon-inner">
                                             <img src="assets/images/icons/layer.svg" alt="Icon Images">
-                                            <div class="image-2"><img src="assets/images/icons/icon-02.svg"
-                                                    alt="Shape Images"></div>
+                                            <div class="image-2"><img src="assets/images/icons/icon-02.svg" alt="Shape Images"></div>
 
                                         </div>
                                     </div>
@@ -699,8 +827,8 @@
                                         <h4 class="title wow"><a href="">Web Design and
                                                 Development
                                             </a></h4>
-                                        <p class="wow">We design professional looking yet simple websites.
-                                            Our designs are search engine and user friendly.</p>
+                                        <p class="wow">Website development is the work that happens behind the scenes to
+                                            make your website look fabulous, work fast and perform amazingly well.</p>
                                         <a class="axil-button" data-hover="Learn More" href="">Learn
                                             More</a>
                                     </div>
@@ -713,16 +841,15 @@
                                     <div class="icon gradient-color-04">
                                         <div class="icon-inner">
                                             <img src="assets/images/icons/layer.svg" alt="Icon Images">
-                                            <div class="image-2"><img
-                                                    src="https://img.icons8.com/nolan/64/pay-wall.png" /></div>
+                                            <div class="image-2"><img src="https://img.icons8.com/nolan/64/pay-wall.png" /></div>
                                         </div>
                                     </div>
                                     <div class="content">
                                         <h4 class="title wow"><a href="">PPC (PAY PER CLICK)
                                             </a></h4>
-                                        <p class="wow">We design professional looking yet simple websites.
-                                            Our designs are search engine
-                                            and user friendly. </p>
+                                        <p class="wow">Our team is here to increase traction to your website or enhance
+                                            your conversions and help you accomplish your business goals by optimizing
+                                            your campaigns most profitably. </p>
                                         <a class="axil-button" data-hover="Learn More" href="">Learn
                                             More</a>
                                     </div>
@@ -733,22 +860,20 @@
 
                         <!-- Start Single Service -->
                         <div class="col-lg-4 col-md-4 col-sm-4 col-12 move-up wow" id="single-ser-section">
-                            <div
-                                class="axil-service text-center axil-control paralax-image service-bg-gray space-to-top">
+                            <div class="axil-service text-center axil-control paralax-image service-bg-gray space-to-top">
                                 <div class="inner">
                                     <div class="icon gradient-color-02">
                                         <div class="icon-inner">
                                             <img src="assets/images/icons/layer.svg" alt="Icon Images">
-                                            <div class="image-2"><img src="assets/images/icons/seo-search-symbol.svg"
-                                                    alt="Shape Images"></div>
+                                            <div class="image-2"><img src="assets/images/icons/seo-search-symbol.svg" alt="Shape Images"></div>
                                         </div>
                                     </div>
                                     <div class="content">
                                         <h4 class="title wow"><a href="">Search Engine Optimization
                                             </a>
                                         </h4>
-                                        <p class="wow">We design professional looking yet simple websites.
-                                            Our designs are search engine and user friendly. </p>
+                                        <p class="wow">Our experts is here to boost your website rankings the right way
+                                            with the most successful SEO strategies and make your life easier. </p>
                                         <a class="axil-button" data-hover="Learn More" href="">Learn
                                             More</a>
                                     </div>
@@ -759,21 +884,20 @@
 
                         <!-- Start Single Service -->
                         <div class="col-lg-4 col-md-4 col-sm-4 col-12 move-up wow" id="single-ser-section">
-                            <div
-                                class="axil-service text-center axil-control active paralax-image service-bg-gray space-to-top2">
+                            <div class="axil-service text-center axil-control active paralax-image service-bg-gray space-to-top2">
                                 <div class="inner">
                                     <div class="icon gradient-color-03">
                                         <div class="icon-inner">
                                             <img src="assets/images/icons/layer.svg" alt="Icon Images">
-                                            <div class="image-2"><img src="assets/images/icons/settings.svg"
-                                                    alt="Shape Images"></div>
+                                            <div class="image-2"><img src="assets/images/icons/settings.svg" alt="Shape Images"></div>
                                         </div>
                                     </div>
                                     <div class="content">
                                         <h4 class="title wow"><a href="">Social Media Management
                                             </a></h4>
-                                        <p class="wow">We design professional looking yet simple websites.
-                                            Our designs are search engine and user friendly.</p>
+                                        <p class="wow">Social media is perhaps the biggest trend in the current digital
+                                            age we live in. Our experts are here to leverage social media to scale your
+                                            business across the market.</p>
                                         <a class="axil-button" data-hover="Learn More" href="">Learn
                                             More</a>
                                     </div>
@@ -794,9 +918,8 @@
                                     <div class="content">
                                         <h4 class="title wow"><a href="">Branding & PR
                                             </a></h4>
-                                        <p class="wow">We design professional looking yet simple websites.
-                                            Our designs are search engine
-                                            and user friendly. </p>
+                                        <p class="wow">As rightly quoted by Jeff Bezos “A brand is literally what people
+                                            say about your business when you’re not in the room”. </p>
                                         <a class="axil-button" data-hover="Learn More" href="#">Learn
                                             More</a>
                                     </div>
@@ -807,14 +930,12 @@
 
                         <!-- Start Single Service -->
                         <div class="col-lg-4 col-md-4 col-sm-4 col-12 move-up wow" id="single-ser-section">
-                            <div
-                                class="axil-service text-center axil-control paralax-image service-bg-gray space-to-top">
+                            <div class="axil-service text-center axil-control paralax-image service-bg-gray space-to-top">
                                 <div class="inner">
                                     <div class="icon gradient-color-02">
                                         <div class="icon-inner">
                                             <img src="assets/images/icons/layer.svg" alt="Icon Images">
-                                            <div class="image-2"><img src="assets/images/icons/icon-03.svg"
-                                                    alt="Shape Images"></div>
+                                            <div class="image-2"><img src="assets/images/icons/icon-03.svg" alt="Shape Images"></div>
                                         </div>
                                     </div>
                                     <div class="content">
@@ -833,21 +954,20 @@
 
                         <!-- Start Single Service -->
                         <div class="col-lg-4 col-md-4 col-sm-4 col-12 move-up wow" id="single-ser-section">
-                            <div
-                                class="axil-service text-center axil-control active paralax-image service-bg-gray space-to-top2">
+                            <div class="axil-service text-center axil-control active paralax-image service-bg-gray space-to-top2">
                                 <div class="inner">
                                     <div class="icon gradient-color-03">
                                         <div class="icon-inner">
                                             <img src="assets/images/icons/layer.svg" alt="Icon Images">
-                                            <div class="image-2"><img src="assets/images/icons/icon-03.svg"
-                                                    alt="Shape Images"></div>
+                                            <div class="image-2"><img src="assets/images/icons/icon-03.svg" alt="Shape Images"></div>
                                         </div>
                                     </div>
                                     <div class="content">
                                         <h4 class="title wow"><a href="#">Email Marketing
                                             </a></h4>
-                                        <p class="wow">We design professional looking yet simple websites.
-                                            Our designs are search engine and user friendly.</p>
+                                        <p class="wow">E-mail marketing is one of the most beneficial digital marketing
+                                            strategies for sending emails to prospective clients and customers. We are
+                                            here to ensure the same for your business.</p>
                                         <a class="axil-button" data-hover="Learn More" href="#">Learn
                                             More</a>
                                     </div>
@@ -858,23 +978,21 @@
                 </div>
             </div>
             <!-- End Service Area -->
+
+
+
             <!-- Start Counterup Area -->
-            <div class="axil-counterup-area ax-section-gap bg-color-white">
+            <div class="axil-counterup-area ax-section-gap bg-color-white" style="background-color: #41447B;">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <!-- Start Section Title -->
+                    <div class="row align-items-center" >
+                        
                         <div class="col-lg-5 col-12">
                             <div class="section-title text-left">
 
-                                <h2 class="title wow" data-splitting>What makes us special?</h2>
-                                <p class="subtitle-2 wow pr--0" data-splitting>Donec metus lorem, vulputate at sapien
-                                    sit
-                                    amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.
-                                    Aliquam
-                                    tristique libero.</p>
+                                <h2 class="title wow" style="text-transform: none; color: #ffffff;"  data-splitting>What makes us special?</h2>
+                                <p class="subtitle-2 wow pr--0" style="color: #ffffff;" data-splitting>We are your go to partners for everything that your business needs for digital success.</p>
                                 <div class="view-all-portfolio-button mt--40">
-                                    <a class="axil-button btn-large btn-transparent" href="/career.html"><span
-                                            class="button-text">Careers</span><span class="button-icon"></span></a>
+                                    <a class="axil-button btn-large btn-transparent" href="/career.html"><span class="button-text">Careers</span><span class="button-icon"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -889,7 +1007,7 @@
                                         <div class="icon">
                                             <img src="assets/images/counterup/shape-01.png" alt="Shape Images">
                                         </div>
-                                        <h3 class="count">15</h3>
+                                        <h3 class="">25+</h3>
                                         <p>Years of Experience</p>
                                     </div>
                                 </div>
@@ -897,12 +1015,11 @@
 
                                 <!-- Start Single Counterup  -->
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                    <div
-                                        class="axil-counterup text-center color-style-two mt--60 mt_mobile--40 move-up wow">
+                                    <div class="axil-counterup text-center color-style-two mt--60 mt_mobile--40 move-up wow">
                                         <div class="icon">
                                             <img src="assets/images/counterup/shape-02.png" alt="Shape Images">
                                         </div>
-                                        <h3 class="count">360</h3>
+                                        <h3 class="">40+</h3>
                                         <p>Projects deliverd</p>
                                     </div>
                                 </div>
@@ -914,7 +1031,7 @@
                                         <div class="icon">
                                             <img src="assets/images/counterup/shape-03.png" alt="Shape Images">
                                         </div>
-                                        <h3 class="count">600</h3>
+                                        <h3 class="">11+</h3>
                                         <p>Specialist</p>
                                     </div>
                                 </div>
@@ -922,12 +1039,11 @@
 
                                 <!-- Start Single Counterup  -->
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                    <div
-                                        class="axil-counterup text-center color-style-four mt--60 mt_mobile--40 move-up wow">
+                                    <div class="axil-counterup text-center color-style-four mt--60 mt_mobile--40 move-up wow">
                                         <div class="icon">
                                             <img src="assets/images/counterup/shape-04.png" alt="Shape Images">
                                         </div>
-                                        <h3 class="count">20 </h3>
+                                        <h3 class="">24 +</h3>
                                         <p>Certifications </p>
                                     </div>
                                 </div>
@@ -940,7 +1056,7 @@
                 </div>
             </div>
             <!-- End Counterup Area -->
-            <!-- trust services -->
+
 
             <section class="section services-section" id="services">
                 <div class="container">
@@ -948,8 +1064,8 @@
                         <div class="col-lg-6">
                             <div class="section-title">
                                 <h2>Process</h2>
-                                <p>I design and develop services for customers of all sizes, specializing in creating
-                                    stylish, modern websites</p>
+                                <!-- <p>I design and develop services for customers of all sizes, specializing in creating
+                                    stylish, modern websites</p> -->
                             </div>
                         </div>
                     </div>
@@ -963,8 +1079,8 @@
                                 </div>
                                 <div class="feature-content">
                                     <h5>Free Consultation </h5>
-                                    <p>I design and develop services for customers of all sizes, specializing in
-                                        creating stylish, modern websites.</p>
+                                    <p>We offer a 1:1 session, where we will help you think through all the ideas and
+                                        opportunities for your business and how we can make them happen for you. </p>
                                 </div>
                             </div>
                         </div>
@@ -978,8 +1094,9 @@
                                 </div>
                                 <div class="feature-content">
                                     <h5>KPA Analysis</h5>
-                                    <p>I design and develop services for customers of all sizes, specializing in
-                                        creating stylish, modern websites.</p>
+                                    <p> We offer an extensive KPA analysis that can identify key problems faced by your
+                                        business, outline and evaluate alternative courses and provide you with an
+                                        appropriate solution.</p>
                                 </div>
                             </div>
                         </div>
@@ -993,8 +1110,10 @@
                                 </div>
                                 <div class="feature-content">
                                     <h5>Competitor Analysis</h5>
-                                    <p>I design and develop services for customers of all sizes, specializing in
-                                        creating stylish, modern websites.</p>
+                                    <p>We offer you an effective competitive analysis, by carefully evaluating your
+                                        competitors and define their strengths and weaknesses to help you build a robust
+                                        business strategy.
+                                        .</p>
                                 </div>
                             </div>
                         </div>
@@ -1008,8 +1127,9 @@
                                 </div>
                                 <div class="feature-content" id="featured-box">
                                     <h5>Creating a budget</h5>
-                                    <p>I design and develop services for customers of all sizes, specializing in
-                                        creating stylish, modern websites.</p>
+                                    <p>We will help you create a detailed budget that identifies your capital, estimate
+                                        your spending, and also generate revenue for your business at an affordable
+                                        cost.</p>
                                 </div>
                             </div>
                         </div>
@@ -1023,8 +1143,10 @@
                                 </div>
                                 <div class="feature-content">
                                     <h5>Project Onboarding</h5>
-                                    <p>I design and develop services for customers of all sizes, specializing in
-                                        creating stylish, modern websites.</p>
+                                    <p>We have a detailed discussion with all the experts whose services are required
+                                        brainstorm the various creative aspects, develop a strong strategy, and execute
+                                        the same to ensure optimum results for every onboarded project.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1038,8 +1160,8 @@
                                 </div>
                                 <div class="feature-content">
                                     <h5>Create Magic</h5>
-                                    <p>I design and develop services for customers of all sizes, specializing in
-                                        creating stylish, modern websites.</p>
+                                    <p>We are a team of young creative experts who are highly empowered, super
+                                        motivated, and result-driven and provide you with an exemplary service.</p>
                                 </div>
                             </div>
                         </div>
@@ -1053,8 +1175,9 @@
                                 </div>
                                 <div class="feature-content">
                                     <h5>Project Submission</h5>
-                                    <p>I design and develop services for customers of all sizes, specializing in
-                                        creating stylish, modern websites.</p>
+                                    <p>We provide intrinsic solutions to your business and ensure the quality and
+                                        reputation of your products and services at every level before project
+                                        deliverables. </p>
                                 </div>
                             </div>
                         </div>
@@ -1068,13 +1191,15 @@
                                 </div>
                                 <div class="feature-content">
                                     <h5>After-sales services</h5>
-                                    <p>I design and develop services for customers of all sizes, specializing in
-                                        creating stylish, modern websites.</p>
+                                    <p>We continue to provide you with professional and profound services for every
+                                        project and also offer one year free maintenance for websites and applications.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <!-- / -->
                     </div>
+
                 </div>
             </section>
 
@@ -1088,9 +1213,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="section-title text-center">
+                            <div class="section-title">
                                 <!-- <span class="sub-title extra05-color wow" data-splitting>  </span> -->
-                                <h2 class="title wow" data-splitting>Client Testimonials</h2>
+                                <h2 class="title wow" style="text-transform: none;" data-splitting>Client Testimonials</h2>
 
                             </div>
                         </div>
@@ -1098,23 +1223,27 @@
                     <div class="testimonial-activation">
                         <div class="row axil-testimonial-single">
                             <!-- Start Single Testimonial -->
-                            <div class="col-lg-6 mt--60">
+                            <div class="col-lg-4 mt--60">
                                 <div class="axil-testimonial testimonial active move-up wow">
                                     <div class="inner">
                                         <div class="clint-info-wrapper">
                                             <div class="thumb">
-                                                <img src="assets/images/testimonial/client-01.jpg" alt="Clint Images">
+                                                <img src="/test/IMG-20160627-WA0007.jpg" alt="Clint Images">
                                             </div>
                                             <div class="client-info">
-                                                <h4 class="title">Martha Maldonado</h4>
-                                                <span>Executive Chairman @ Google</span>
+                                                <h4 class="title" style="font-size:19px;"> Mrinalini Chavan</h4>
+                                                <span style="font-size: 13px;">Co Founder & Director at GreenLeaf Packaging LLP</span>
                                             </div>
                                         </div>
                                         <div class="description">
-                                            <p class="subtitle-3">Donec metus lorem, vulputate at sapien sit amet,
-                                                auctor
-                                                iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.</p>
-                                            <a class="axil-link-button" href="#">Read Project Case Study</a>
+                                            <p class="subtitle-3">I am extremely happy with the website created by
+                                                CretMark. The design elements and theme projection were very creatively
+                                                done. They did a fabulous job right from the concept to the
+                                                implementation process. The team had a lot of out-of-the-box creative
+                                                ideas and other marketing strategies that I was not aware of. I am
+                                                highly satisfied and appreciative of the work done by CretMark and look
+                                                forward to more collaborations in the future..</p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -1122,28 +1251,53 @@
                             <!-- End Single Testimonial -->
 
                             <!-- Start Single Testimonial -->
-                            <div class="col-lg-6 mt--60">
+                            <div class="col-lg-4 mt--60">
                                 <div class="axil-testimonial axil-control testimonial move-up wow">
                                     <div class="inner">
                                         <div class="clint-info-wrapper">
                                             <div class="thumb">
-                                                <img src="assets/images/testimonial/client-02.jpg" alt="Clint Images">
+                                                <img src="/test/sandeep.jpg" alt="Clint Images">
                                             </div>
                                             <div class="client-info">
-                                                <h4 class="title">Martha Maldonado</h4>
-                                                <span>Executive Chairman @ Google</span>
+                                                <h4 class="title" style="font-size:19px;">Sandeep Thakur</h4>
+                                                <span style="font-size: 13px;">Professional Violinist & Music Composer.</span>
                                             </div>
                                         </div>
                                         <div class="description">
-                                            <p class="subtitle-3">Donec metus lorem, vulputate at sapien sit amet,
-                                                auctor
-                                                iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit.</p>
-                                            <a class="axil-link-button" href="#">Read Project Case Study</a>
+                                            <p class="subtitle-3">The CRETMARK web design team was extremely supportive
+                                                and pro active in creating a website that I was looking for my business.
+                                                The team is prompt in their service as my website was not just handed
+                                                over but also went live much before their commitment date. I am happy
+                                                with the dynamic and fresh look CretMark has given to me by designing an
+                                                ambassador for my prospective clients. I will highly recommend CretMark
+                                                to anyone looking for web solutions.</p>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- End Single Testimonial -->
+                                                <!-- Start Single Testimonial -->
+                                                <div class="col-lg-4 mt--60">
+                                                    <div class="axil-testimonial axil-control testimonial move-up wow">
+                                                        <div class="inner">
+                                                            <div class="clint-info-wrapper">
+                                                                <div class="thumb">
+                                                                    <img src="/test/blog.jpg" alt="Clint Images">
+                                                                </div>
+                                                                <div class="client-info">
+                                                                    <h4 class="title" style="font-size:19px;">Mirei Op Reis</h4>
+                                                                    <span style="font-size: 13px;">Travel Blogger & Photographer. </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="description">
+                                                                <p class="subtitle-3">I was looking for a website that could reach out to a huge scale of audience. Being a travel blogger, I was looking for something very artistic and creative. CretMark helped me with an amazing website. The website was wonderfully conceptualized and developed. The team at CretMark had ingenious ideas and made my dream of being a successful travel blogger come true. They created the website in the Dutch language and also provided an option to change the wonderful language.  Kudos to the entire team for the incredible work!</p>
+                    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Single Testimonial -->
 
                         </div>
                     </div>
@@ -1158,7 +1312,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="section-title text-center">
+                            <div class="section-title">
 
                                 <h2 class="title">Blogs</h2>
 
@@ -1172,12 +1326,9 @@
                                 <div class="content">
                                     <div class="content-wrap paralax-image">
                                         <div class="inner">
-                                            <span class="category">Lifestyle</span>
-                                            <h5 class="title"><a href="blog-details.html">Choosing the right features
-                                                    for
-                                                    your custom</a></h5>
-                                            <p>Quisque eget erat augue. Cras gravida enim nulla, a dictum erat fringilla
-                                                at.
+                                            <!-- <span class="category">Lifestyle</span> -->
+                                            <h5 class="title"><a href="/blog1.html">Why is a user interface important? </a></h5>
+                                            <p>How a creative UI on your website can do wonders for your business!
                                             </p>
                                         </div>
                                     </div>
@@ -1196,12 +1347,9 @@
                                 <div class="content">
                                     <div class="content-wrap paralax-image">
                                         <div class="inner">
-                                            <span class="category">Lifestyle</span>
-                                            <h5 class="title"><a href="blog-details.html">Choosing the right features
-                                                    for
-                                                    your custom</a></h5>
-                                            <p>Quisque eget erat augue. Cras gravida enim nulla, a dictum erat fringilla
-                                                at.
+                                            <!-- <span class="category">Lifestyle</span> -->
+                                            <h5 class="title"><a href="/blog2.html"> How to create a winning website?</a></h5>
+                                            <p>Amazing ways to create an effective website
                                             </p>
                                         </div>
                                     </div>
@@ -1226,17 +1374,14 @@
                         <div class="col-lg-12">
                             <div class="axil-call-to-action">
                                 <div class="section-title text-center">
-                                    <span class="sub-title extra04-color wow" data-splitting>Let's work together</span>
-                                    <h2 class="title wow" data-splitting>Need a successful project?</h2>
-                                    <a class="axil-button btn-large btn-transparent" href="#"><span
-                                            class="button-text">Whatsapp Us</span><span class="button-icon"></span></a>
+                                    <!-- <span class="sub-title extra04-color wow" data-splitting>Let's work together</span> -->
+                                    <h2 class="title wow" style="text-transform: none;" data-splitting>Need a <span class="color1"> Successful </span> Project?</h2>
+                                    <a class="axil-button btn-large btn-transparent" href="#"><span class="button-text">Whatsapp Us</span><span class="button-icon"></span></a>
                                     <div class="callto-action">
                                         <span class="text wow" data-splitting> call us</span>
-                                        <span class="wow" data-splitting><i class="fal fa-phone-alt"></i> <a
-                                                href="tel:+919136193111">(+91) 913 619 3111</a></span>
+                                        <span class="wow" data-splitting><i class="fal fa-phone-alt"></i> <a href="tel:+919136193111">(+91) 913 619 3111</a></span>
                                         <span class="text wow" data-splitting>Or Mail us</span>
-                                        <span class="wow" data-splitting><i class="fa fa-envelope"
-                                                aria-hidden="true"></i> <a href>info@cretmark.com
+                                        <span class="wow" data-splitting><i class="fa fa-envelope" aria-hidden="true"></i> <a href="">info@cretmark.com
                                             </a></span>
                                     </div>
                                 </div>
@@ -1279,9 +1424,7 @@
                                     <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                                     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                       
                                 </ul>
                             </div>
                         </div>
@@ -1289,21 +1432,21 @@
                 </div>
                 <!-- End Social Icon -->
                 <!-- Start Footer Top Area -->
-                <div class="footer-top ax-section-gap">
+                <div class="footer-top " style="padding-top: 130px;">
                     <div class="container">
                         <div class="row">
                             <!-- Start Single Widget -->
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="footer-widget-item axil-border-right">
-                                    <h2>Get in touch!</h2>
-                                    <p>Fusce varius, dolor tempor interdum tristique, dui urna <br /> bibendum magna, ut
-                                        ullamcorper purus</p>
+                                    <h2>Get in <span class="color1"> touch! </span></h2>
+                                    <p>If you want to how to scale your brand  <br> develop your business, contact us NOW!</p>
                                     <div class="axil-newsletter">
-                                        <form class="newsletter-form" action="#">
-                                            <input type="email" placeholder="Email">
-                                            <a class="axil-button btn-transparent" href="#"><span
-                                                    class="button-text">Subscribe</span><span
-                                                    class="button-icon"></span></a>
+                                        <form class="newsletter-form" action="" method="POST">
+                                            <input type="email" name="subemail" id="subemail" placeholder="Email">
+                                           <!-- <input id="submitemail" name="submitemail" type="submit">   -->
+                                           <div class="form-group">
+                                            <input type="submit"  id="submitemail" name="submitemail" value="Subscribe" id="">
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -1313,7 +1456,7 @@
                             <!-- Start Single Widget -->
                             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
                                 <div class="footer-widget-item">
-                                    <h6 class="title">Services</h6>
+                                    <h6 style="font-size: 25px;" class="title">Services</h6>
                                     <div class="footer-menu-container">
                                         <ul class="ft-menu liststyle link-hover">
                                             <li><a href="#">Logo & Branding</a></li>
@@ -1322,6 +1465,9 @@
                                             <li><a href="#">Search Engine Optimization</a></li>
                                             <li><a href="#">Pay-Per-Click</a></li>
                                             <li><a href="#">Social Media Marketing</a></li>
+                                            <li><a href="#">UI & UX</a></li>
+                                            <li><a href="#">Email  Marketing</a></li>
+                                            <li><a href="#">Content Marketing</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1331,12 +1477,12 @@
                             <!-- Start Single Widget -->
                             <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-12 mt_lg--30 mt_md--30 mt_sm--30">
                                 <div class="footer-widget-item">
-                                    <h6 class="title">Resourses</h6>
+                                    <h6 class="title" style="font-size: 25px;">Resourses</h6>
                                     <div class="footer-menu-container">
                                         <ul class="ft-menu liststyle link-hover">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="case-study.html">Case Studies</a></li>
-                                            <li><a href="portfolio.html">Portfolio</a></li>
+                                            <li><a href="/blog-list-two.html">Blog</a></li>
+                                            <li><a href="/service.html">Case Studies</a></li>
+                                            <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -1346,12 +1492,12 @@
                             <!-- Start Single Widget -->
                             <div class="col-xl-1 col-lg-6 col-md-6 col-sm-6 col-12 mt_lg--30 mt_md--30 mt_sm--30">
                                 <div class="footer-widget-item widget-support">
-                                    <h6 class="title">Support</h6>
+                                    <h6 class="title" style="font-size: 25px;">Support</h6>
                                     <div class="footer-menu-container">
                                         <ul class="ft-menu liststyle link-hover">
                                             <li><a href="contact.html">Contact</a></li>
                                             <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                            <li><a href="#">Sitemap</a></li>
+                                            <!-- <li><a href="#">Sitemap</a></li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -1367,13 +1513,12 @@
                         <div class="row row--0 ptb--20 axil-basic-thine-line">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div class="inner text-center text-md-left">
-                                    <p>© 2020. All rights reserved by Cretmark</p>
+                                    <p > CretMark© 2021. All rights reserved by Cretmark</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div class="quick-contact">
-                                    <ul
-                                        class="link-hover d-flex justify-content-center justify-content-md-end liststyle">
+                                    <ul class="link-hover d-flex justify-content-center justify-content-md-end liststyle">
                                         <li><a data-hover="Privacy Policy" href="privacy-policy.html">Privacy Policy</a>
                                         </li>
                                         <li><a href="#">Terms of Use</a></li>
@@ -1419,12 +1564,29 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <script>
-
         var preloader = document.getElementById("loading");
 
         function myFunction() {
             preloader.style.display = 'none';
         };
+    </script>
+    <script>
+        $('.brand-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
     </script>
 
 </body>
@@ -1433,3 +1595,110 @@
 
 
 </html>
+<!-- <?php
+
+
+
+if(isset($_POST['submitemail']))
+{
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "cretmark";
+    
+    
+
+$email=$_POST["subemail"] ;
+
+
+
+
+
+
+
+//Creating a connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+if(!$conn){
+die("Sorry, we failed to update");
+}
+else{
+// echo "Successful creation of db";
+}
+
+$sql = "INSERT INTO subscribe(email)
+VALUES ('$email')";
+
+if ($conn->query($sql) === TRUE) {
+// echo "you form submited";
+function function_alert($message) {
+
+// Display the alert box
+echo "<script>
+    alert('$message');
+</script>";
+}
+
+
+// Function call
+function_alert($email." you have subscribed  successfully");
+
+} else {
+echo "Error: " . $sql . "<br>" . $conn->error;
+}
+}
+
+
+
+?>
+
+<?php
+
+
+if(isset($_POST['con_submit']))
+{
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "cretmark";
+    
+$femail=$_POST["con_email"] ;
+
+$ftext=$_POST["con_text"] ;
+
+
+ 
+
+
+
+//Creating a connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+if(!$conn){
+die("Sorry, we failed to update");
+}
+else{
+// echo "Successful creation of db";
+}
+
+$sql = "INSERT INTO homequote(email,text)
+VALUES ('$femail','$ftext')";
+
+if ($conn->query($sql) === TRUE) {
+// echo "you form submited";
+function function_alert($message) {
+
+// Display the alert box
+echo "<script>
+    alert('$message');
+</script>";
+}
+
+
+// Function call
+function_alert($femail." you have subscribed  successfully");
+
+} else {
+echo "Error: " . $sql . "<br>" . $conn->error;
+}
+}
+?> -->

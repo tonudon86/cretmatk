@@ -509,6 +509,7 @@ h3,
 h4,
 h5,
 h6 {
+  text-transform: capitalize;
   font-family: "DM Sans", sans-serif;
   color: #41447B;
   font-weight: 700;
@@ -706,8 +707,8 @@ p.subtitle-1 {
 }
 
 p.subtitle-2 {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -739,8 +740,8 @@ p.subtitle-2 {
 
 p.subtitle-3 {
   color: #41447B;
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 15px;
+  line-height: 23px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -11396,7 +11397,7 @@ ul.mainmenu {
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   ul.mainmenu {
-    margin: 0 -16px;
+    margin: -2px -49px;
   }
 }
 
@@ -14141,7 +14142,7 @@ Contact Form Style
 
 .form-group input {
   border: 0;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #41447B;
   background-color: transparent;
   padding-bottom: 8px;
   padding-top: 8px;
@@ -14681,7 +14682,7 @@ Masonary Grid List
   height: 20px;
 }
 
-.axil-counterup h3.count {
+.axil-counterup h3.count {`
   font-size: 50px;
   font-weight: 700;
   line-height: 62px;
@@ -14790,6 +14791,7 @@ Masonary Grid List
 }
 
 .axil-testimonial::before {
+  display: none;
   position: absolute;
   content: "";
   right: 40px;
@@ -14806,12 +14808,14 @@ Masonary Grid List
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .axil-testimonial::before {
+    display: none;
     right: 20px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .axil-testimonial::before {
+    display: none;
     right: 20px;
   }
 }
@@ -14921,7 +14925,7 @@ Masonary Grid List
 }
 
 .axil-testimonial .clint-info-wrapper .thumb img {
-  height: 60px;
+  height: 145px;
 }
 
 .axil-testimonial .clint-info-wrapper .client-info {
@@ -14936,19 +14940,19 @@ Masonary Grid List
 }
 
 .axil-testimonial .clint-info-wrapper .client-info h4.title {
-  line-height: 32px;
-  margin-bottom: 5px;
+  line-height: 20px;
+  /* margin-bottom: 5px; */
 }
 
 @media only screen and (max-width: 767px) {
   .axil-testimonial .clint-info-wrapper .client-info h4.title {
-    line-height: 24px;
+    line-height: 17px;
     font-size: 20px;
   }
 }
 
 .axil-testimonial .clint-info-wrapper .client-info span {
-  line-height: 28px;
+  line-height: 15px;
   display: inline-block;
 }
 
@@ -15216,7 +15220,7 @@ ul.client-list {
 }
 
 ul.client-list li a img {
-  max-height: 40px;
+  max-height: 300px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -19266,7 +19270,7 @@ ul.axil-breadcrumb li.axil-breadcrumb-item + .axil-breadcrumb-item::before {
 .axil-working-process .content {
   padding-left: 110px;
   position: relative;
-  margin-right: 200px;
+  /* margin-right: 200px; */
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -19354,7 +19358,7 @@ ul.axil-breadcrumb li.axil-breadcrumb-item + .axil-breadcrumb-item::before {
 }
 
 .axil-working-process.text-left .content {
-  margin-right: 110px;
+  /* margin-right: 110px; */
   padding-left: 200px;
 }
 
@@ -21874,8 +21878,9 @@ Single Demo Area
 }
 
 .footer-default .footer-widget-item ul.ft-menu li a {
+  font-size: 14px;
   color: #41447B;
-  line-height: 28px;
+  line-height: 18px;
   padding: 0;
   text-decoration: none;
 }
@@ -21885,7 +21890,7 @@ Single Demo Area
 }
 
 .footer-default .footer-widget-item ul.ft-menu li + li {
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .footer-default .footer-widget-item.widget-support {
@@ -22050,7 +22055,7 @@ Single Demo Area
 }
 
 .newsletter-form input {
-  width: 330px;
+  width: 250px;
   padding-bottom: 8px;
 }
 
@@ -22111,8 +22116,8 @@ Single Demo Area
   color: #41447B
 }
 #logoimg{
-  height: 100%;
-  width: 100%;
+  height: 60%;
+  width: 60%;
 }
 #logom{
   height: 100px;
@@ -22144,14 +22149,15 @@ Single Demo Area
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
  
 #a-tag-contact{
-  margin-right: -250px;
-  margin-left: 200px;
+  margin-right: -450px;
+  margin-left: 120px;
   background: #B72851;
   color: #ffffff;
   border-radius: 4px;
   padding: 15px;
   padding-left: 20px;
   padding-right: 20px;
+  text-decoration: none;
 
 }
 #a-tag-contact:hover{
@@ -22169,8 +22175,8 @@ height: 20%;
 }
 #title-home-heading{
   color: #B72851;
-   margin-top: 80px;
-   font-size: 48px;
+   /* margin-top: 80px; */
+   font-size: 36px;
    line-height: 126%;
    /* font-family: popp; */
    /* font-family: Poppins; */
@@ -22190,10 +22196,7 @@ padding:20px ;
 color: #000000;
 text-decoration: none;
 }
-#input-ty{
-  background-color: #ffffff;
-opacity: 0.6;
-}
+
 #button-id{
   border-radius: 4px;
   background: #41447B;
@@ -22239,3 +22242,18 @@ opacity: 0.6;
 
 }
 }
+#blog2-1{
+
+}
+#input-ty{
+  background-color: #ffffff;
+opacity: 0.6;
+}
+
+.color2{
+color: #41447B;
+}
+.color1{
+  color: #B72851;
+}
+/* team */
